@@ -1,0 +1,17 @@
+.headline {
+    font: var(--headline2);
+    margin: 0;
+}
+
+.content {
+    font: var(--body2-regular);
+    margin: 0;
+}
+
+.is-white {
+    color: var(--white);
+}
+
+.is-dark {
+    color: var(--dark);
+}

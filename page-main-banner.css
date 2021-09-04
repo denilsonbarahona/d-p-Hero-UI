@@ -1,0 +1,28 @@
+.banerMainImage {
+    max-block-size: 17.125rem;
+    box-sizing: border-box;
+    inline-size: 100%;
+    block-size: 100%;
+    overflow: hidden; 
+}
+
+.banerMainImage img{
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+@media screen and (min-width:665px ) {
+    .banerMainImage {
+        max-block-size: 36.5rem;
+    }
+}
+
+@media screen and (min-width: 1020px) { 
+    .banerMainImage { 
+        max-block-size: 100vh;
+        inline-size: 85rem;
+    }
+
+}

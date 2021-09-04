@@ -1,0 +1,141 @@
+.main {
+    display: flex; /* 
+    min-block-size: 100vh; */
+    flex-direction: column;
+    gap: 1.5rem;
+}
+ 
+.main-content {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+}
+ 
+.content-section { 
+    block-size: 100%;
+}
+
+.content-section .content-section-group1 {
+    padding-inline: 1.5rem; 
+    padding-block-end: 1.5rem; 
+}
+
+.content-section-group1 .loki-logo{
+    margin-block-end: 1.5rem;
+    block-size: 2rem; 
+    inline-size: 4.81rem;
+} 
+
+.content-section-group1 .loki-logo img {
+    inline-size: 100%;
+    block-size: 100%;
+    vertical-align: middle;
+}
+
+.content-section-group1 .headline{
+    margin-block-end: .5rem;
+}
+
+.content-section-group1 .button{
+    margin-block-start: 1.5rem;
+}
+
+@media screen and (min-width:665px ) {
+    .main {
+        gap: 2.5rem;
+    }
+
+    .content-section-group1 .loki-logo{
+       block-size: 5rem; 
+       inline-size: 12rem;
+    } 
+
+    .content-section .content-section-group1 {
+        padding-inline: 2.5rem; 
+        padding-block-end: 1.5rem; 
+ 
+    }
+    
+    .content-section .content-section-group1 h1{
+        font-size: 3rem; 
+    }
+
+    .content-section .content-section-group1 p {
+        font-size:  1.70rem; 
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .main .main-content { 
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1;
+        position: relative;
+    }
+
+    .main {  
+        block-size: 100vh;
+        gap: 0;
+    }
+
+    .content-section {
+        position: absolute;
+        display: flex;
+        inline-size: 42rem; 
+        inset-inline-start: 0;
+        background: var(--black-1);
+        align-items: center;
+        clip-path: polygon(0 0, 70% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .content-section-group1 { 
+        inline-size: 25rem;      
+    }
+
+    .content-section-group1 .loki-logo{
+        block-size: 4rem;
+        inline-size: 9rem;
+    }
+    
+    .content-section .content-section-group1 h1{
+        font-size: 2.5rem; 
+    }
+
+    .content-section .content-section-group1 p {
+        font-size:  1rem; 
+    }
+
+    .content-section-group1 .button {
+        inline-size: 9rem;
+    }
+}
+
+
+@media screen and (min-width: 1430px) {
+    
+    .content-section { 
+        inline-size: 60rem;
+    }
+   
+    .content-section-group1 { 
+        inline-size: 30rem;      
+    }
+
+    .content-section-group1 .loki-logo{
+        margin-block-end: 1.5rem;
+        block-size: 4rem; 
+        inline-size: 10rem;
+    } 
+
+    .content-section .content-section-group1 h1{
+        font-size: 3rem; 
+    }
+
+    .content-section .content-section-group1 p {
+        font-size:  1.5rem; 
+    }
+
+    .content-section-group1 .button {
+        inline-size: 10rem;
+    }
+}
