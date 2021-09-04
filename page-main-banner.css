@@ -26,3 +26,10 @@
     }
 
 }
+
+@media screen and (min-width: 1980px) { 
+    .banerMainImage { 
+        max-block-size: 100vh;
+        inline-size: 120rem;
+    }
+}

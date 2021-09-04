@@ -139,3 +139,33 @@
         inline-size: 10rem;
     }
 }
+
+
+@media screen and (min-width: 1980px) {
+
+    .content-section { 
+        inline-size: 80rem;  
+     }
+   
+    .content-section-group1 { 
+        inline-size: 50rem;      
+    }
+
+    .content-section-group1 .loki-logo{
+        margin-block-end: 1.5rem;
+        block-size: 6rem; 
+        inline-size: 12rem;
+    } 
+
+    .content-section .content-section-group1 h1{
+        font-size: 3.5rem; 
+    }
+
+    .content-section .content-section-group1 p {
+        font-size:  1.75rem; 
+    }
+
+    .content-section-group1 .button {
+        inline-size: 12rem;
+    }
+}
